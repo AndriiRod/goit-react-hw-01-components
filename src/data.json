@@ -1,0 +1,7 @@
+[
+  { "id": "id-1", "label": ".docx", "percentage": 22, "color": "#F55252" },
+  { "id": "id-2", "label": ".pdf", "percentage": 4, "color": "#ACF783" },
+  { "id": "id-3", "label": ".mp3", "percentage": 17, "color": "#F76A6A" },
+  { "id": "id-4", "label": ".psd", "percentage": 47, "color": "#52F7DE" },
+  { "id": "id-5", "label": ".pdf", "percentage": 10, "color": "#F75EF7" }
+]
