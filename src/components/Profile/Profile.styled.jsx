@@ -9,6 +9,13 @@ export const UserCard = styled.div`
 
   background-color: #f55252;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transform: scale(1);
+  transition: transform 250ms linear;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const Img = styled.img`
