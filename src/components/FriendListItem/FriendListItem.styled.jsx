@@ -18,3 +18,11 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 1.2;
 `;
+
+export const Item = styled.li`
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 30px;
+`;

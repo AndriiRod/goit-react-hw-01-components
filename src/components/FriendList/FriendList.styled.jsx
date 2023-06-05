@@ -12,11 +12,3 @@ export const FriendsList = styled.ul`
 
   background-color: #e6e6fa;
 `;
-
-export const Item = styled.li`
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-left: 30px;
-`;
