@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 
-import { FriendsList, Item, Indicator, Text } from './FriendList.styled';
+import { FriendListItem } from 'components/FriendListItem/FriendListItem';
+
+import { FriendsList, Item } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -8,9 +10,7 @@ export const FriendList = ({ friends }) => {
       {friends.map(({ avatar, name, isOnline, id }) => {
         return (
           <Item key={id}>
-            <Indicator isOnline={isOnline}></Indicator>
-            <img src={avatar} alt="User avatar" width="48" />
-            <Text>{name}</Text>
+            <FriendListItem isOnline={isOnline} avatar={avatar} name={name} />
           </Item>
         );
       })}
@@ -21,9 +21,6 @@ export const FriendList = ({ friends }) => {
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      avatar: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      isOnline: PropTypes.bool.isRequired,
       id: PropTypes.number.isRequired,
     })
   ),
